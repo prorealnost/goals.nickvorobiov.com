@@ -1,0 +1,35 @@
+.s-price {
+  padding-top: 0 !important;
+  padding-bottom: 10em;
+
+  &__row {
+  }
+
+  &__item {
+    &-text {
+      background-color: $color-back;
+      padding: 2.857em;
+      padding-bottom: (2.857em - 2.143em);
+
+      h5 {
+        margin-top: 0;
+      }
+    }
+
+    &-button {
+      padding: 1.428em 2.857em;
+
+      a, button {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &-header {
+      font-weight: 400;
+      &--special {
+        font-weight: 700;
+      }
+    }
+  }
+}
