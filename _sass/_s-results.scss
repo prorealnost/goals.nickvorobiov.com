@@ -1,25 +1,6 @@
 .s-results {
   padding-top: 0 !important;
 
-  &__row {
-    @include flexbox;
-  }
-
-  &__item {
-    padding: 2.857em;
-    border: 2px solid $color-primary;
-    margin-right: 2.857em;
-    position: relative;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  h5 {
-    margin-top: 0;
-  }
-
   p {
     margin-bottom: 0;
   }

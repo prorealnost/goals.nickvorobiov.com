@@ -2,6 +2,9 @@
   background: #efefef url(../images/b_main.jpg) bottom right no-repeat;
   background-size: 60%;
   min-height: 700px;
+
+  padding: 3em 0;
+
   @include bp-xlarge {
     min-height: 750px;
   }
@@ -51,7 +54,7 @@
 .desktop {
   &.landscape {
     .s- {
-      &listbuilder-main {
+      &main {
         height: 100vh;
         &__inner {
           height: 100vh;
