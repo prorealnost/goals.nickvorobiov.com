@@ -32,16 +32,16 @@ $(function() {
     //console.log('form: отправляю..');
     var msg = $(this).serialize();
 
-    var $vk = $(this).find('[name=vk]');
+    var $email = $(this).find('[name=email]');
 
     var post_params = {
-      vk: $vk.val(),
+      email: $email.val(),
     };
 
-    if(post_params.vk !== undefined && !post_params.vk.length) {
-      $vk.addClass('error');
+    if(post_params.email !== undefined && !post_params.email.length) {
+      $email.addClass('error');
       e.preventDefault();
-      return message.error('Укажи ссылку на свою страницу ВКонтакте, пожалуйста!', 'warning');
+      return message.error('Укажи свою почту, пожалуйста!', 'warning');
     }
   });
 
