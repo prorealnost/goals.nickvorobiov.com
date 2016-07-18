@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<div class="root-layout">
+  {% include header.html %}
+  <main class="main" role="main">
+    <section class="section s-buy">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-9 col-xs-offset-2">
+            <h1 class="title">Оплатить курс <nobr>«{{ page.coursetitle }}»</nobr></h1>
+            <p>Выбери способ оплаты и нажми на кнопку «Оплатить»</p>
+
+            <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=41001469914505&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets=%D0%9A%D1%83%D1%80%D1%81%20%C2%AB{{ page.coursetitleurl }}%C2%BB&targets-hint=&default-sum=450&button-text=01&fio=on&mail=on&phone=on&successURL=http%3A%2F%2Fgoals.nickvorobiov.com%2Fpaid%2F" width="450" height="198"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include footer.html %}
+</div>
